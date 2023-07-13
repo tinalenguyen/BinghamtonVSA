@@ -20,6 +20,12 @@
             width: 90%;   
           }
     }   */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
 
     body {
       background-color: rgb(255, 249, 228)
@@ -52,7 +58,7 @@
   <nav class="navbar navbar-custom navbar-expand container-fluid">
     <a class="navbar-brand">
       <img src="static/lotus.png" width="60" height="40" alt="">
-      <b>Binghamton University Vietnamese Student Association</b>
+      <b><a class="nav-link" href="index.html">Binghamton University Vietnamese Student Association</a></b>
     </a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
@@ -82,10 +88,10 @@
       bạn!</strong></p>
 
   <div class="row justify-content-around container-fluid">
-    <div class="col-12 embed-responsive embed-responsive-16by9 w-50">
+    <div class="column embed-responsive embed-responsive-16by9 w-50">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a-jWT8UBbLU" allowfullscreen></iframe>
   </div> 
-    <div class="col-4 text-center" style="font-family: trebuchet ms">
+    <div class="column text-center" style="font-family: trebuchet ms">
       <p style="font-size: 35px"><strong>Welcome to our page!</strong></p>
       <br>
       <p style="font-size: 20px">We are the Binghamton Vietnamese Student Association (VSA). We organize impactful
@@ -97,11 +103,11 @@
   </div>
   <br>
   <center>
-
-    <div class="d-flex align-items-center" style="font-family: trebuchet ms">
-      <p class="fw-light" style="font-size: 25px">Want updates from us?</p>
+    <br>
+    <p class="text-center fw-light" style="font-family: trebuchet ms; font-size: 25px"><strong>Want updates from us?
+      <br>
       Email vsa@binghamtonsa.org to be added on our biweekly email list!
-    </div>
+    </strong></p>
     </div>
     </div>
   </center>
@@ -112,6 +118,5 @@
     <p class="" style="font-size: 20px">Binghamton Vietnamese Student Association © </p>
     <p class="" style="color:rgba(182, 180, 180, 0.822)">4400 Vestal Parkway East, Binghamton, NY 13902</p>
     <p class="" style="color:rgba(182, 180, 180, 0.822)">vsa@binghamtonsa.org</p>
-
   </footer>
   </body>
