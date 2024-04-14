@@ -22,7 +22,7 @@ def home():
 @app.route('/about')
 def about():
     try:
-        return render_template('index.html', title = "about")
+        return render_template('about.html', title = "about")
     except:
         return render_template('error.html')
     
