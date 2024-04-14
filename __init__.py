@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def load():
     try:
-        return render_template('home.html')
+        return render_template('index.html')
     except:
         return render_template('error.html')
 
@@ -15,14 +15,14 @@ def load():
 @app.route('/home')
 def home():
     try:
-        return render_template('home.html', title="home")
+        return render_template('index.html', title="home")
     except:
         return render_template('error.html')
 
 @app.route('/about')
 def about():
     try:
-        return render_template('about.html', title = "about")
+        return render_template('index.html', title = "about")
     except:
         return render_template('error.html')
     
